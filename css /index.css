@@ -30,6 +30,35 @@ footer {
   align-items: center;
 }
 
+.formSendMessage__title {
+  font-size: 1.5em;
+}
+.formSendMessage__form-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: space-around;
+}
+
+.formSendMessage__socialIcon {
+  display: flex;
+}
+.socialIcon__text {
+  font-size: 1em;
+}
+.socialIcon__icon {
+  display: flex;
+  list-style-type: none;
+  padding-left: 10px;
+}
+.socialIcon__icon li {
+  align-self: center;
+}
+.socialIcon__icon li a  {
+  margin-right: 5px;
+}
+
+
+
 
 
 
