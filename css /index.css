@@ -28,7 +28,7 @@ main {
   color: #e67e22;
 }
 .aboutUs__list {
-  width: 50%;
+  width: 80%;
   margin: auto;
   text-align: left;
 }
@@ -54,6 +54,78 @@ main {
 }
 /* !section-1  */
 
+/* !section-2  */
+.subtitle__item {
+  display: flex;
+  background: url('https://demo.w3layouts.com/demos_new/template_demo/06-10-2018/interface-demo_Free/1801170920/web/images/a2.jpg') no-repeat center;
+  background-size: cover;
+  padding: 20px 40px;
+  position: relative;
+}
+.subtitle__item::before {
+  background: rgba(255, 87, 34, 0.73);
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.subtitle__item .item__image {
+  height: auto;
+  width: 30%;
+  position: relative;
+  z-index: 2;
+}
+.subtitle__item .item__wrapper {
+  color: white;
+  position: relative;
+  margin-top: 30px;
+  z-index: 2;
+}
+.subtitle__item .item__wrapper .-border {
+  border-bottom: 1px solid white;
+  width: 90%;
+  font-weight: bold;
+}
+.subtitle__item .item__wrapper .-smallText {
+  font-size: small;
+  width: 90%;
+}
+.subtitle .-item2 {
+  background: url('https://demo.w3layouts.com/demos_new/template_demo/06-10-2018/interface-demo_Free/1801170920/web/images/a3.jpg') no-repeat center;
+}
+.subtitle .-item2::before {
+  background: rgba(75, 73, 222, 0.74);
+}
+.subtitle .-item3 {
+  background: url('https://demo.w3layouts.com/demos_new/template_demo/06-10-2018/interface-demo_Free/1801170920/web/images/a1.jpg') no-repeat center;
+  padding: 50px;
+}
+.subtitle .-item3::before {
+  background: rgba(231, 193, 60, 0.89);
+}
+.subtitle .-item3 {
+  flex-direction: column-reverse;
+}
+.subtitle .-item3 .item__image {
+  height: auto;
+  width: 50%;
+  margin: auto;
+}
+.subtitle .-item3 .item__wrapper {
+  margin-top: 0px;
+}
+/* !section-2  */
+
+/* !section-3 */
+
+/* !section-3 */
+
+/* !section-4  */
+/* !section-4  */
+
+
 header {
   background: #cedee4;
   text-align: center;
@@ -73,7 +145,7 @@ header {
   font-size: 20px;
   display: inline-block;
   Color: #e67e22;
-  padding: 10px 50px 10px 50px;
+  padding: 0px 50px 10px 50px;
   opacity: 0.5;
   background: rgba(254,254,254,1);
   background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(223,230,233,1) 42%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%);
@@ -89,7 +161,6 @@ header {
 footer {
   background: #dfe6e9;
   padding: 20px;
-  position: sticky;
   display: flex;
   flex-direction: column;
   align-items: center;
