@@ -13,6 +13,7 @@ header {
   background: #dfe6e9;
   text-align: center;
   word-spacing: 0.5px;
+  letter-spacing: 0.5px;
   position: fixed; 
   top: 0;
   width: 100%;
@@ -20,9 +21,18 @@ header {
 
 .banner__text {
   font-size: 20px;
-  display: inline-block;
+  display: block;
   Color: #e67e22;
-  padding: 40px;
+  padding: 20px;
+  opacity: 0.5;
+  background: rgba(254,254,254,1);
+  background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(223,230,233,1) 42%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(254,254,254,1)), color-stop(42%, rgba(223,230,233,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(100%, rgba(226,226,226,1)));
+  background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(223,230,233,1) 42%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%);
+  background: -o-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(223,230,233,1) 42%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%);
+  background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(223,230,233,1) 42%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%);
+  background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(223,230,233,1) 42%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 );
 }
 
 footer {
@@ -64,7 +74,7 @@ footer {
 .formSendMessage__form button {
   position: relative;
   height: auto;
-  right: -90%;
+  right: -81%;
   margin-top: 10px;
   background-color: #e67e22;
   padding: 10px 50px 10px 50px;
