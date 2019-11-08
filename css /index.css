@@ -14,6 +14,45 @@ main {
   margin-top: 110px;
 }
 
+/* !section-1  */
+.aboutUs {
+  padding-top: 30px;
+  text-align: center;
+}
+.aboutUs__introduction {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.aboutUs__introduction i {
+  font-size: larger;
+  color: #e67e22;
+}
+.aboutUs__list {
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+.list__item {
+  padding: 0 10px;
+  margin: 25px 0;
+}
+.list__item a {
+  text-decoration: none; 
+  color: black;
+  font-weight: 700;
+}
+.introduction__title {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 2em;
+}
+.introduction__caption {
+  margin: 0px;
+  margin-top: 5px;
+  font-size: 1em;
+  font-weight: 300;
+}
+/* !section-1  */
 
 header {
   background: #cedee4;
@@ -29,6 +68,7 @@ header {
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
 }
 
+/* !banner */
 .banner__text {
   font-size: 20px;
   display: inline-block;
@@ -44,6 +84,7 @@ header {
   background: linear-gradient(to bottom, rgba(254,254,254,1) 0%, rgba(223,230,233,1) 42%, rgba(219,219,219,1) 50%, rgba(226,226,226,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 );
 }
+/* !banner  */
 
 footer {
   background: #dfe6e9;
