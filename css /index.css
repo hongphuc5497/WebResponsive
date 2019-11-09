@@ -22,6 +22,7 @@ main {
 .aboutUs__introduction {
   margin-bottom: 30px;
   text-transform: capitalize;
+  font-size: smaller;
 }
 .aboutUs__introduction i {
   font-size: larger;
@@ -120,10 +121,84 @@ main {
 /* !section-2  */
 
 /* !section-3 */
-
+.ourCapabilities {
+  text-align: center;
+  padding-top: 30px;
+  font-size: smaller;
+}
+.ourCapabilities__introduction {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.ourCapabilities__introduction i {
+  font-size: larger;
+  color: #e67e22;
+}
 /* !section-3 */
 
 /* !section-4  */
+.easyCustomization {
+  text-align: center;
+  padding-top: 30px;
+}
+.easyCustomization__introduction {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: smaller;
+}
+.easyCustomization__introduction i {
+  font-size: larger;
+  color: #e67e22;
+}
+.easyCustomization__listImageCard .listImageCard__button {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  display: inline-flex;
+  right: -30%;
+  position: relative;
+}
+.listImageCard__button .button__1 {
+  background-color: rgb(23, 162, 184);
+  border: 0;
+  padding: 10px 12px;
+}
+.listImageCard__button .button__2 {
+  background-color: rgb(220, 53, 69);
+  border: 0;
+  padding: 10px 12px;
+}
+.listImageCard__button .button__1 i {
+  color: white;
+  font-size: 1.3em;
+}
+.listImageCard__button .button__2 i {
+  color: white;
+  font-size: 1.3em;
+}
+.listImageCard__item {
+  padding: 0 20px;
+  border: none;
+  box-shadow: 0 27px 24px rgba(0, 0, 0, 0.1), 0 40px 77px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 30px;
+}
+.listImageCard__item img {
+  max-width: 100%;
+  height: auto;
+}
+.listImageCard__item h4 {
+  /* text-align: left; */
+  padding-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #cec1c1;
+}
+.listImageCard__item p {
+  padding: 10px;
+}
 /* !section-4  */
 
 
@@ -158,6 +233,8 @@ header {
 }
 /* !banner  */
 
+
+
 footer {
   background: #dfe6e9;
   padding: 0 20px;
@@ -170,7 +247,6 @@ footer {
   right: 0;
   left: 0;
 }
-
 /* !Block-1 */
 .formSendMessage {
   padding-right: 15px;
@@ -281,5 +357,5 @@ footer {
 
 
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 600px) {}
 @media only screen and (min-width: 992px) {}
