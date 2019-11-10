@@ -120,11 +120,92 @@ main {
 /* !section-2  */
 
 /* !section-3 */
-
+.ourCapabilities {
+  text-align: center;
+  padding-top: 30px;
+}
+.ourCapabilities__introduction {
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-size: smaller;
+}
+.ourCapabilities__introduction i {
+  font-size: larger;
+  color: #e67e22;
+}
+.ourCapabilities__timeline {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.ourCapabilities__timeline::before {
+  content: '';
+  background: black;
+  top: 0;
+  border-radius: 20px;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 83px;
+}
+.ourCapabilities__timeline .timeline__item {
+  display: flex;
+  text-align: left;
+  position: relative;
+}
+.timeline__item .item__icon {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  padding-top: 6px;
+  border-radius: 50%;
+  border: 3px solid #ec496e;
+  position: relative;
+  left: 5%;
+  margin-top: 15px;
+}
+.timeline__item .item__icon::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: -60%;
+  width: 3px;
+  background-color: #ec496e;
+  transform: rotate(90deg);
+}
+.timeline__item .item__icon i {
+  border-radius: 50%;
+  padding: 5px;
+  padding-top: 6px;
+  background: #ec496e;
+  font-size: 20px;
+}
+.timeline__item .item__content {
+  padding-right: 5px;
+  padding-left: 100px;
+  font-size: small;
+  position: relative;
+}
+.timeline__item .item__content::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  top: 25%;
+  bottom: 0;
+  right: 0;
+  left: 17%;
+  border-left: 3px solid #ec496e;
+  border-bottom: 3px solid #ec496e;
+} 
+.item__content h3 {
+  text-transform: uppercase;
+  color: #ec496e;
+  font-weight: 600;
+}
 /* !section-3 */
 
 /* !section-4  */
-<<<<<<< HEAD
 .easyCustomization {
   text-align: center;
   padding-top: 30px;
@@ -202,8 +283,6 @@ main {
   opacity: 0.5;
   font-size: 10px;
 }
-=======
->>>>>>> parent of 330570e... Configuring main - section 4
 /* !section-4  */
 
 
@@ -357,8 +436,6 @@ footer {
   text-align: center;
 }
 /* !Block-3 */
-
-
 
 
 @media only screen and (min-width: 768px) {}
