@@ -41,7 +41,7 @@ header {
 .navigation .navigation__list {
   display: none;
   list-style-type: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding-left: 0;
   text-transform: uppercase;
   background-color: #c7ecee;
@@ -205,11 +205,13 @@ main {
   content: '';
   background: black;
   top: 0;
+  left: 83px;
+  right: 0;
   border-radius: 20px;
   width: 5px;
   height: 100%;
   position: absolute;
-  left: 83px;
+  
 }
 .ourCapabilities__timeline .timeline__item {
   display: flex;
@@ -605,5 +607,128 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  /* !header */
+  .navigation .navigation__button {
+    display: none;
+  }
+  .navigation .navigation__list {
+    display: flex;
+    font-size: 1.5em;
+  }
+  .banner__text {
+    left: 22%;
+  }
+  /* !main  */
+  .ourCapabilities__timeline::before {
+    left: 0 !important;
+    margin: auto;
+  }
+  .ourCapabilities__timeline .timeline__item {
+    left: -3% !important;
+    margin-bottom: 50px !important;
+  }
+  .ourCapabilities__timeline .timeline__item-orange {
+    padding-right: 410px;
+    text-align: right;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__icon {
+    left: 120%;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__icon::before {
+    left: -92%;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__icon::after {
+    right: 168%;
+    top: -16%;
+    height: 59px;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__icon a::after {
+    right: 50%;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__content {
+    padding-left: 0px !important;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item-orange .item__content::before {
+    left: 55%;
+    top: 10%;
+    border-left: 0px;
+    border-right: 3px solid #f9850f;
+  }
+  .ourCapabilities__timeline .timeline__item-orange {
+    padding-right: 410px;
+    text-align: right;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__icon {
+    left: 120%;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__icon::before {
+    left: -92%;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__icon::after {
+    right: 168%;
+    top: -16%;
+    height: 59px;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__icon a::after {
+    right: 50%;
+  }
+  .ourCapabilities__timeline .timeline__item-orange .item__content {
+    padding-left: 0px !important;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item-orange .item__content::before {
+    left: 55%;
+    top: 10%;
+    border-left: 0px;
+    border-right: 3px solid #f9850f;
+  }
 
-@media only screen and (min-width: 992px) {}
+  /* !meow  */
+  .ourCapabilities__timeline .timeline__item-blue {
+    padding-right: 410px;
+    text-align: right;
+  }
+  .ourCapabilities__timeline .timeline__item-blue .item__icon {
+    left: 120% !important;
+  }
+  .ourCapabilities__timeline .timeline__item-blue .item__icon::before {
+    left: -110% !important;
+  }
+  .ourCapabilities__timeline .timeline__item-blue .item__icon::after {
+    right: 182% ;
+    top: -16%;
+    height: 59px;
+  }
+  .ourCapabilities__timeline .timeline__item-blue .item__icon a::after {
+    right: 50%;
+  }
+  .ourCapabilities__timeline .timeline__item-blue .item__content {
+    padding-left: 0px;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item-blue .item__content::before {
+    left: 55%;
+    top: 10%;
+    border-left: 0px;
+    border-right: 3px solid #2fcea5;
+  }
+  /* !meow  */
+
+  .ourCapabilities__timeline .timeline__item-pink {
+    padding-left: 319px;
+  }
+  .ourCapabilities__timeline .timeline__item-pink .item__content::before {
+    top: 30% !important;
+    left: 15% !important;
+  }
+  .ourCapabilities__timeline .timeline__item-green {
+    padding-left: 319px;
+  }
+  .ourCapabilities__timeline .timeline__item-green .item__content::before {
+    top: 30% !important;
+    left: 15% !important;
+  }
+  /* !footer  */
+  .formSendMessage__form button {
+    right: -80%;
+  }
+}
