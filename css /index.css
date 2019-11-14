@@ -838,6 +838,26 @@ footer .footer-wrapper {
   .ourCapabilities .ourCapabilities__introduction p {
     font-size: 1.5em;
   }
+  .ourCapabilities .ourCapabilities__timeline .item__content {
+    padding-bottom: 20px;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item-pink,
+  .ourCapabilities .ourCapabilities__timeline .timeline__item-green {
+    padding-left: 450px;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item-orange, .ourCapabilities .ourCapabilities__timeline .timeline__item-blue {
+    padding-right: 552px;
+  }
+  .ourCapabilities .ourCapabilities__timeline .item__content::before {
+    top: 32% !important;
+    left: 13% !important;
+    width: 80%;
+  }
+  .ourCapabilities .ourCapabilities__timeline  .timeline__item-orange .item__content::before,
+  .ourCapabilities .ourCapabilities__timeline  .timeline__item-blue .item__content::before  {
+    left: 29% !important;
+    width: 80%;
+  }
   /* section-4  */
   .easyCustomization .easyCustomization__introduction i {
     font-size: 2em;
