@@ -375,16 +375,33 @@ header {
 }
 .navigation {
   position: fixed;
-  width: 100%;
-  background: #81ecec;
+  /* background: #81ecec; */
   z-index: 999;
+  width: 100%;
+}
+.navigation .navigation__button {
+  color: #e67e22;
+  text-transform: uppercase;
+  border-radius: 10%;
+  border: 0;
+  position: fixed;
+  left: 0;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #c7ecee;
+  padding: 10px;
+  font-size: large;
 }
 .navigation .navigation__list {
-  display: flex;
+  display: none;
   list-style-type: none;
   justify-content: space-around;
   padding-left: 0;
   text-transform: uppercase;
+  background-color: #c7ecee;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
 }
 .navigation__list li {
   color: #e67e22;
@@ -475,10 +492,11 @@ footer {
 }
 .socialIcon__icon li a  {
   margin-right: 10px;
+  color: #ffff;
 }
 .socialIcon__icon li a i {
   font-size: 25px;
-  color: #e67e22;
+  /* background: #003cbb;  */
 }
 /* !Block-1 */
 

@@ -10,13 +10,16 @@
 <body>
   <header>
     <nav class="navigation">
+      <button type="menu"  class="navigation__button">
+        <i class="fas fa-bars"></i>
+      </button>
       <ul class="navigation__list">
-        <li><a>home</a></li>
-        <li><a>about</a></li>
-        <li><a>portfolio</a></li>
-        <li><a>single</a></li>
-        <li><a>contact</a></li>
-      </ul>
+          <li><a>home</a></li>
+          <li><a>about</a></li>
+          <li><a>portfolio</a></li>
+          <li><a>single</a></li>
+          <li><a>contact</a></li>
+      </ul> 
     </nav>
 
     <h4 class="banner__text">
@@ -325,16 +328,16 @@
         <h2 class="socialIcon__text">Stay Connected :</h2>
         <ul class="socialIcon__icon">
           <li>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i style="color: #1da1f2;" class="fab fa-twitter-square"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i style="color: #003cbb;" class="fab fa-facebook"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i style="color: #dd4b39;" class="fab fa-google-plus-g"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i style="color: #1da1f2;" class="fab fa-linkedin"></i></a>
           </li>
         </ul>
       </div>
@@ -372,5 +375,23 @@
     </div>
     <!-- !Block_3 -->
   </footer>
+
+  <script>
+      var acc = document.getElementsByClassName("navigation__button");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          var navigation__list = this.nextElementSibling;
+          var navigation__button = this;
+          if (navigation__list.style.display === "block") {
+            naviagation__list.style.display = "none";
+          } else {
+            navigation__list.style.display = "flex";
+            navigation__button.style.display = "none";
+          }
+        });
+      }
+  </script>
 </body>
 </html>
