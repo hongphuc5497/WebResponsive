@@ -478,7 +478,6 @@ footer {
 /* !Block-1 */
 .formSendMessage {
   padding-right: 15px;
-  padding-left: 0px;
   width: 100%;
 }
 .formSendMessage__title {
@@ -533,9 +532,13 @@ footer {
   font-size: 25px;
   /* background: #003cbb;  */
 }
+
+footer .footer-wrapper {
+  width: 100%;
+}
 /* !Block-2 */
 .information {
-  width: 98%;
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -636,6 +639,9 @@ footer {
   footer {
     font-size: 15px;
   }
+  footer .footer-wrapper {
+    padding-right: 15px;
+  }
   .formSendMessage
     .formSendMessage__form
     .formSendMessage__form-wrapper
@@ -645,9 +651,6 @@ footer {
   .formSendMessage button {
     right: -75%;
   }
-  .information {
-    width: 100%;
-  }
   .information .information__siteNavigation .siteNavigation__list {
     flex-direction: row;
   }
@@ -655,6 +658,9 @@ footer {
 
 @media only screen and (min-width: 768px) {
   /* !header */
+  header {
+    min-height: 70vh;
+  }
   .navigation .navigation__button {
     display: none;
   }
@@ -786,4 +792,27 @@ footer {
   .formSendMessage__form button {
     right: -80%;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* !header  */
+  .navigation .navigation__list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .banner__text {
+    left: 30%;
+    top: 25%;
+  }
+  /* !main  */
+  /* section-1  */
+  .aboutUs .aboutUs__list {
+    width: 90%;
+  }
+  .aboutUs .aboutUs__list-wrapper {
+    padding-bottom: 30px;
+    display: flex;
+  }
+  /* section-2  */
+
 }
