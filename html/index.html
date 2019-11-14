@@ -318,7 +318,7 @@
           <input id="name" name="name" type="text" placeholder="Your Name" required>
         </div>
         <div class="formSendMessage__form-wrapper">
-          <label for="email">Email</label>
+          <label class="form__label" for="email">Email</label>
           <input id="email" name="email" type="text" placeholder="Your Email" required>
         </div>
         <button type="submit">SEND</button>
@@ -377,11 +377,11 @@
   </footer>
 
   <script>
-      var acc = document.getElementsByClassName("navigation__button");
-      var i;
+    var acc = document.getElementsByClassName("navigation__button");
+    var i;
       
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
           var navigation__list = this.nextElementSibling;
           var navigation__button = this;
           if (navigation__list.style.display === "block") {
