@@ -548,11 +548,35 @@ footer {
 
 @media only screen and (min-width: 600px) {
   /* !header */
+  .navigation .navigation__button {
+    padding: 10px;
+    font-size: 1.5em;
+  }
   .banner__text {
     left: 15%;
     font-size: 25px;
   }
   /* !main */
+  /* setion 3 */
+  .ourCapabilities .ourCapabilities__timeline::before {
+    width: 7px;
+    left: 80px;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item {
+    left: -2%;
+    margin-bottom: 10px;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item .item__content::before {
+    top: 36%;
+    left: 13%;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item-blue .item__icon {
+    left: 6%;
+  }
+  .ourCapabilities .ourCapabilities__timeline .timeline__item-blue .item__icon::before {
+    left: 137%;
+  }
+  /* section 4 */
   .easyCustomization .easyCustomization__listImageCard .listImageCard__button {
     right: -40%;
   }
